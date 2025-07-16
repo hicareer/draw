@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쫀득 룰렛 게임</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>쫀득 룰렛 게임</h1>
+
+        <div class="input-section">
+            <label for="numberInput">2에서 50 사이의 숫자 입력:</label>
+            <input type="number" id="numberInput" min="2" max="50" value="10">
+            <button id="createRouletteBtn">룰렛 만들기</button>
+        </div>
+
+        <div class="roulette-section">
+            <div class="roulette-container">
+                <div class="roulette-pointer"></div>
+                <div class="roulette-wheel" id="rouletteWheel">
+                    </div>
+            </div>
+            <button id="spinRouletteBtn" class="hidden">룰렛 돌리기</button>
+        </div>
+
+        <div id="resultBox" class="result-box hidden">
+            <p>당첨 숫자:</p>
+            <span id="winningNumber"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
